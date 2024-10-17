@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- .......................................................................
+File: index.html
+Purpose:The index file for the first project of the full stack software development bootcamp
+Authur: Dr. Ashraf Bocktor
+Date: 11/10/2024
+Updated:15/10/2024
+...................................................................... -->
+<!-- The lang attribute is used to identify the language of text content on the web document.  -->
+<!-- The langauge is English -->
+<html lang="en">
+<!-- The <head> element is the first element to be defined within the HTML document. 
+    It contains all the data about the web page that isn't visible in the browser window.  -->
+
+<head>
+  <!-- The meta element Allows developers to define important data about their website that helps with display and SEO. -->
+
+  <!-- We use the charset metadata type to define the character encoding of a webpage. -->
+  <!-- The value given to the charset attribute is usually UTF-8, which is the character encoding for Unicode. -->
+  <!-- Unicode is a 16-bit character set designed to cover all the world's major languages, and as such should cover most of your needs as a developer.  -->
+
+  <meta charset="UTF-8" />
+
+  <!-- The viewport metadata type is used to define the viewport - the user's visible area of the web page.  -->
+  <!-- This area varies depending on the device, being smaller on a mobile than on a computer screen. -->
+  <!-- Within the data provided, the width=device-width part sets the width of the page to follow the screen width of the device - which will vary depending on the device. -->
+  <!-- The initial-scale=1.0 part sets the initial zoom level when the browser first loads the page. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link to the style sheet in the css folder within the assets folder. -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- The content of the title element is shown in the tab when viewing the page in the browser. It also shows up in search engine results. -->
+
+  <title>The 1% wellbeing rule</title>
+</head>
+
+<body>
+  <!-- This is the container element for the header. It groups together related content, making it easier to manage and style. -->
+  <header>
+    <h1>The 1% Wellbeing Rule</h1>
+    
+    
+    <nav>
+      <!-- The anchor tag to create hyper links -->
+      <!-- href is an attribute that specifies the URL to which the link points -->
+      <a href="about.html"> About </a>
+      <a href="contact.html"> Contact</a>
+      
+    </nav>
+
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Your lifestyle: the 1% rule</h2>
+      </header>
+      <!-- <section class="content-container"> -->
+      <section class="poem-table">
+        <!-- <h3>Your lifestyle: the 1% rule</h3> -->
+        <table>
+          <tbody>
+            <tr>
+              <td class="line-number">1.</td>
+              <td class="first-part">Eat not too much bread</td>
+              <td class="second-part">Please use your head</td>
+            </tr>
+            <tr>
+              <td class="line-number">2.</td>
+              <td class="first-part">Try to exercise everyday on your feet</td>
+              <td class="second-part">And if you cannot do it in the gym, do it in the street</td>
+            </tr>
+            <tr>
+              <td class="line-number">3.</td>
+              <td class="first-part">Go to bed early to sleep at night</td>
+              <td class="second-part">To avoid nightmares & sleepy fights</td>
+            </tr>
+            <tr>
+              <td class="line-number">4.</td>
+              <td class="first-part">When you wake up talk to yourself positively or say a little pray</td>
+              <td class="second-part">That will bless your entire day</td>
+            </tr>
+            <tr>
+              <td class="line-number">5.</td>
+              <td class="first-part">Speak to your loved ones and listen to a romantic song</td>
+              <td class="second-part">Do not leave your heart without entertainment for too long</td>
+            </tr>
+            <tr>
+              <td class="line-number">6.</td>
+              <td class="first-part">Read couple of pages from an interesting book</td>
+              <td class="second-part">That is actually food for your brain that you home cook</td>
+            </tr>
+            <tr>
+              <td class="line-number">7.</td>
+              <td class="first-part">Life is beautiful if we enjoy it in a bitsize little steps</td>
+              <td class="second-part">You will see it for yourself if you follow my advice for the next three hundred
+                and sixty five days or rep (repetitions)</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <footer>Author: Dr. Ashraf Bocktor</footer> -->
+        <!-- </section> -->
+      </section>
+    </article>
+
+
+
+
+    <!-- Add Flex container for all the sections defined as pictures -->
+    <section class="flex-container">
+      <section class="picture">
+        <img src="assets/images/mind.jpg"
+          alt="Mind (Mental Wellbeing): A silhouette of a head with vibrant, interconnected neural pathways representing mental activity and well-being."
+          width="70%" height="100%" />
+      </section>
+      <section class="picture">
+        <img src="assets/images/pray.jpg"
+          alt="Meditation (Spiritual Wellbeing): A man meditating under the night sky with the full moon, symbolizing spiritual well-being and inner peace."
+          width="70%" height="100%" />
+      </section>
+      <section class="picture">
+        <img src="assets/images/heart.jpg"
+          alt="Hearts (Emotional Wellbeing): Two intertwined red hearts symbolizing emotional connection and love."
+          width="70%" height="100%" />
+      </section>
+      <section class="picture">
+        <img src="assets/images/physical.jpg"
+          alt="Physical Exercise (Physical Wellbeing): A man and woman exercising outdoors, demonstrating physical activity and fitness."
+          width="70%" height="100%" />
+      </section>
+    </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© The 1% Wellbeing Rule: Be Fruitful & Achieve Your Full Potential</p>
+  </footer>
+</body>
+
+</html>

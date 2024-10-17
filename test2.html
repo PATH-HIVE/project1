@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow-x: auto;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        .poem-section {
+            margin: 20px 0; /* Add spacing around the poem */
+        }
+
+        .poem-title {
+            font-size: 1.5em; /* Make the title larger */
+            margin-bottom: 10px; /* Space below the title */
+            text-align: center; /* Center the title */
+        }
+
+        .poem-content {
+            font-size: 1em; /* Set a readable font size */
+            line-height: 1.5; /* Improve line spacing for readability */
+            word-wrap: break-word; /* Allow long words to break to the next line */
+        }
+
+        @media (max-width: 768px) {
+            .poem-title {
+                font-size: 1.2em; /* Adjust the title size on mobile */
+            }
+
+            .poem-content {
+                font-size: 0.9em; /* Adjust content size on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The 1% Wellbeing Rule</h1>
+        <nav>
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>About Us</h2>
+            </header>
+
+            <section>
+                <h3>Inventory of the Day</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apples</td>
+                            <td>10</td>
+                            <td>Fresh</td>
+                        </tr>
+                        <tr>
+                            <td>Oranges</td>
+                            <td>5</td>
+                            <td>Organic</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="poem-section">
+                <h3 class="poem-title">Your Poem Title Here</h3>
+                <p class="poem-content">Your poem content goes here. Make sure the text wraps correctly. Add more lines to see the effect.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© The 1% Wellbeing Rule: Be Fruitful & Achieve Your Full Potential</p>
+    </footer>
+</body>
+</html>

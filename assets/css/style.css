@@ -1,0 +1,284 @@
+body {
+  
+  background-color: rgb(110, 156, 130);
+  /* background-image:url('../images/green-background-1.jpg'); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+background-size: contain;
+background-position: 4rem 4em;
+background-attachment: local;
+  
+  margin: 0;
+    padding: 0;
+
+}
+
+* {
+  margin: 20px;
+}
+
+
+
+header {
+  font-size: x-large;
+  font-weight: 100;
+  text-align: center; /* to put the header in the center of the page */
+  width: 100%;
+  text-decoration: rgb(139, 0, 252);
+  font-style: oblique 18deg;
+}
+
+h1 {
+  color: rgb(34, 0, 128);
+  width: 100%;
+  margin: 0;
+  text-decoration: brown wavy underline;
+  font-style: italic;
+}
+
+
+nav a {
+  color: blue;
+  margin-top: 10px;
+  display: inline-block;
+        padding: 10px 15px;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        text-decoration: none;
+       
+}
+
+article {
+  max-width: 600px; /* Set a maximum width for the article */
+  margin: auto; /* Center the article */
+}
+
+
+form {
+  display: flex; /* Use flexbox for form layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+
+
+section {
+  border: 2px inset  red;
+  /* border-radius: 10px; */
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 15px; /* Add space between input fields */
+  padding: .5rem;
+  border-width: thick;
+  margin: 20 px;
+  word-wrap: normal;
+  /* border: 3rem;  */
+}
+
+/* Media query for screens wider than 481px */
+@media screen and (min-width: 481px) {
+  .section {
+    width: 40%; /* Stack items vertically */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .section {
+    width: 100%; /* Stack items vertically */
+    padding: 10px; /* Add padding to prevent text from hitting the edge */
+        margin: 0 auto; /* Center the section */
+        width: 100%; /* Ensure the section takes the full width of the viewport */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+
+  
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+
+
+  /* flex-direction: column;  */
+  /* The flex-direction property defines in which direction the container wants to stack the flex items.
+  The column value stacks the flex items vertically (from top to bottom). */
+  flex-wrap: wrap; /* The wrap value specifies that the flex items will wrap. If the total width of the flex items exceeds the width of the flex container, the items will automatically move to the next line instead of being squeezed together */
+  justify-content: center; /* The justify-content property is used to align the flex items. The center value aligns the flex items at the center of the container. */
+  /* justify-content: space-around;  */
+  /* The space-around value displays the flex items with space before, between, and after the lines. */
+  align-items: center; /* The align-items property is used to align the flex items. The center value aligns the flex items in the middle of the container. */
+  
+}
+
+
+/* Media query for screens wider than 481px */
+@media screen and (min-width: 481px) {
+  .flex-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+/* Media query for screens wider than 769px */
+@media screen and (min-width: 769px) {
+  .flex-container {
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-around; /* Space around items */
+  }
+}
+
+.flex-container > section {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.my-table {
+  color:rgb(0, 128, 53);
+  width: 90%; /* Full width of container */
+  border-collapse: collapse; /* Remove gaps between cells */
+  border: 5px solid black; /* Thick black border */
+  z-index: 999; /* Make sure table appears on top */
+  position: relative; /* Ensure it respects z-index */
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  margin: 20 20; /* Centers the table within its container */
+  /* padding: 2px; */
+}
+
+/* Table cell borders */
+.my-table th, .my-table td {
+  /* border: 5px solid black; Apply thick black border to cells */
+  padding: 1px; /* Add padding inside cells */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, sans-serif; /* Set a simple font */
+  font-size: 16px; /* Adjust font size */
+  padding: 10px; /* Add padding for comfort */
+    border: 1px solid #ccc; /* Add a border */
+
+    
+}
+
+
+@media (max-width: 768px) {
+  .my-table {
+      display: block; /* Display as block to enable scrolling */
+      overflow-x: auto; /* Allow horizontal scrolling */
+      max-width: 100%; /* Make sure table does not exceed section width */
+      margin: 30 30; 
+      /* display: flex; */
+      justify-content: center;
+        align-items: top; /* Vertically center */
+    }
+
+  .my-table th, .my-table td {
+      font-size: 12px; /* Smaller font size for mobile */
+      padding: 2px; /* Reduce padding for mobile */
+  }
+}
+
+
+/* Black color for the table heading */
+.my-table th {
+  color: black; /* Make the table heading black */
+  background-color: #f0f0f0; /* Optional: Set a light background for contrast */
+}
+
+/* Optional: Add some spacing around the table */
+.my-table tr {
+  background-color: rgb(33, 30, 167); /* Ensure background is clear */
+}
+.poem-table {
+  font-family: 'Times New Roman', serif;
+  width: 90%;
+  max-width: 800px; /* Reduced max-width for better space utilization */
+  margin: 0 auto; /* Center the poem table */
+  background-color: white;
+  padding: 20px;
+  max-height: 50vh; /* Maximum height to take up half the viewport */
+  overflow-y: auto; /* Scroll if content exceeds the height */
+}
+
+.poem-table h3 {
+  text-align: center; /* Centering the title */
+  color: rgb(205, 64, 224);
+  margin-bottom: 20px;
+}
+
+.poem-table table {
+  width: 100%; /* Ensure the table takes the full width */
+  border-collapse: collapse; /* Remove gaps between cells */
+  table-layout: fixed; /* Prevent horizontal scrolling */
+}
+
+.poem-table td {
+  padding: 5px; /* Reduced padding for less vertical space */
+  vertical-align: top; /* Align content to the top */
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.poem-table .line-number {
+  width: 5%; /* Set a fixed width for line numbers */
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.poem-table .first-part {
+  width: 45%; /* Set fixed width to control layout */
+  text-align: left;
+  padding-right: 10px;
+}
+
+.poem-table .second-part {
+  width: 45%; /* Set fixed width to control layout */
+  text-align: left; /* Left align text */
+}
+
+
+
+@media (max-width: 768px) {
+  .poem-table table {
+      width: 100%; /* Ensuring full width on smaller screens */
+  }
+
+  .poem-table td {
+      display: block; /* Stacks cells vertically on smaller screens */
+      width: 100%; /* Full width for stacked layout */
+      text-align: left; /* Left align text on small screens */
+  }
+
+  .poem-table .second-part {
+      margin-top: 5px; /* Add spacing for stacked layout */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  article {
+      padding: 10px; /* Reduce padding on mobile */
+  }
+
+  input[type="submit"] {
+      width: 100%; /* Full width for submit button */
+  }
+
+  textarea {
+      width: 100%; /* Full width for textarea */
+  }
+}
+
+
+footer {
+  color: rgb(34, 0, 128);
+  font-size: large;
+  /* text-align: left; */
+  margin-top: 20px;
+  text-align: center; /* Center footer text */
+  padding: 10px; /* Padding for footer */
+  background-color: #f8f8f8; /* Same background color as header */
+}
