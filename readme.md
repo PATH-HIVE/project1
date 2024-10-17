@@ -89,3 +89,6 @@ Here is the wireframe PDF file of the initial design of the website.
 which will be a Daily Inventory page. On this page, 
 I would like users to have the opportunity to record/journal 
 their activities covering the four dimensions
+
+## Here is the link of the website as of Thursday the 17th of October 2024
+https://path-hive.github.io/project1/
